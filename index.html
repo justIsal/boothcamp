@@ -1,0 +1,46 @@
+<html>
+
+<head>
+   <title>Evaluasi 1</title>
+   <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+   <div id="loading">
+      <span>data sedang dimuat, tunggu sebentar</span>
+   </div>
+
+   <div id="app" class="d-none">
+      <form id="formMenu">
+         <input type="text" id="menu" placeholder="Tulis menu disini ..." autofocus>
+         <br>
+         <input type="number" id="harga" placeholder="Tulis harga disini ...">
+         <input type="submit" value="tambah" name="submit" id="tambah">
+      </form>
+
+      <hr>
+
+      <input type="search" placeholder="Cari menu ..." oninput="searchMenu(value)">
+
+      <table border="1">
+         <thead>
+            <tr>
+               <th>No</th>
+               <th>Menu</th>
+               <th>Harga</th>
+               <th>Aksi</th>
+            </tr>
+         </thead>
+
+         <tbody id="tableBody">
+
+         </tbody>
+      </table>
+   </div>
+
+
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="index.js"></script>
+</body>
+
+</html>
